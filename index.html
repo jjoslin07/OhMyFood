@@ -4,6 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="/Project-3/public/css/main.css" />
+		<script
+			src="https://kit.fontawesome.com/793864380d.js"
+			crossorigin="anonymous"
+		></script>
 		<title>ohmyfood</title>
 	</head>
 	<body>
@@ -16,8 +20,7 @@
 					/>
 				</div>
 				<div class="header__location">
-					<span class="icon__mapmarker icon"></span>
-					<p>Paris, Belleville</p>
+					<p><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
 				</div>
 				<div class="header__title title">
 					<h1>Book the menu you like</h1>
@@ -29,7 +32,7 @@
 					</h2>
 				</div>
 				<div class="header__btn btn">
-					<button>Explore our restaurants</button>
+					<a href="#restaurants"><button>Explore our restaurants</button></a>
 				</div>
 			</div>
 		</header>
@@ -38,70 +41,82 @@
 				<div class="nav__title title"><h1>How it works</h1></div>
 				<div class="nav__list">
 					<ul>
-						<li>Choose a restaurant</li>
-						<li>Create your menu</li>
-						<li>Go enjoy it at the restaurant</li>
+						<li><i class="fas fa-mobile-alt"></i>Choose a restaurant</li>
+						<li><i class="fas fa-list-ul"></i>Create your menu</li>
+						<li><i class="fas fa-store"></i>Go enjoy it at the restaurant</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
-		<section class="restaurant__section">
+		<section class="restaurant__section" id="restaurants">
 			<div class="container__main">
 				<div class="main__title title"><h1>Restaurants</h1></div>
-				<div class="card">
-					<img
-						src="#"
-						alt="Restaurant table with glasses of white wine and bread in a basket."
-					/>
-					<div class="card__text">
-						<h3>The Full Palette</h3>
-						<h4>New York</h4>
-						<div class="card__icon"></div>
+				<a href="/Project-3/the_full_palette.html">
+					<div class="card">
+						<img
+							src="#"
+							alt="Restaurant table with glasses of white wine and bread in a basket."
+						/>
+						<div class="card__text">
+							<h3>The Full Palette</h3>
+							<h4>New York</h4>
+							<div class="card__icon"><i class="far fa-heart"></i></div>
+						</div>
 					</div>
-				</div>
-				<div class="card">
-					<img
-						src="#"
-						alt="Restaurant table with italian food and glasses of wine and bread in a basket."
-					/>
-					<div class="card__text">
-						<h3>The Enchanted Plate</h3>
-						<h4>New York</h4>
-						<div class="card__icon"></div>
+				</a>
+				<a href="/Project-3/the_enchanted_plate.html">
+					<div class="card">
+						<img
+							src="#"
+							alt="Restaurant table with italian food and glasses of wine and bread in a basket."
+						/>
+						<div class="card__text">
+							<h3>The Enchanted Plate</h3>
+							<h4>New York</h4>
+							<div class="card__icon"><i class="far fa-heart"></i></div>
+						</div>
 					</div>
-				</div>
-				<div class="card">
-					<img
-						src="#"
-						alt="Restaurant table with eggs benedict and a glass of water with lemon slice."
-					/>
-					<div class="card__text">
-						<h3>Bastille</h3>
-						<h4>New York</h4>
-						<div class="card__icon"></div>
+				</a>
+				<a href="/Project-3/bastille.html">
+					<div class="card">
+						<img
+							src="#"
+							alt="Restaurant table with eggs benedict and a glass of water with lemon slice."
+						/>
+						<div class="card__text">
+							<h3>Bastille</h3>
+							<h4>New York</h4>
+							<div class="card__icon"><i class="far fa-heart"></i></div>
+						</div>
 					</div>
-				</div>
-				<div class="card">
-					<img
-						src="#"
-						alt="Restaurant table with asian dish and cinnamon stick on the side."
-					/>
-					<div class="card__text">
-						<h3>Le Gourmand</h3>
-						<h4>New York</h4>
-						<div class="card__icon"></div>
+				</a>
+				<a href="/Project-3/le_gourmand.html">
+					<div class="card">
+						<img
+							src="#"
+							alt="Restaurant table with asian dish and cinnamon stick on the side."
+						/>
+						<div class="card__text">
+							<h3>Le Gourmand</h3>
+							<h4>New York</h4>
+							<div class="card__icon"><i class="far fa-heart"></i></div>
+						</div>
 					</div>
-				</div>
+				</a>
 			</div>
 		</section>
 		<footer>
 			<div class="container">
 				<p class="footer__title">ohmyfood</p>
 				<ul>
-					<li>Suggest a restaurant</li>
-					<li>Become a partner</li>
-					<li>Legal</li>
-					<li>Contact</li>
+					<a href="#"
+						><li><i class="fas fa-utensils"></i>Suggest a restaurant</li></a
+					>
+					<a href="#"
+						><li><i class="fas fa-hands-helping"></i>Become a partner</li></a
+					>
+					<a href="#"><li>Legal</li></a>
+					<a href="mailto:jjosin07@gmail.com"><li>Contact</li></a>
 				</ul>
 			</div>
 		</footer>
