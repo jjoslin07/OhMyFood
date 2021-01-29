@@ -1,0 +1,14 @@
+header {
+	text-align: center;
+}
+.header__explore {
+	background-color: $color-background;
+	height: 15rem;
+}
+.header__location {
+	background-color: darken($color: $color-background, $amount: 5%);
+	border: inset 0.1rem $color-background;
+	i {
+		padding-right: 1rem;
+	}
+}

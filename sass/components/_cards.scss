@@ -1,0 +1,39 @@
+.nav__card {
+	background-color: $color-background;
+	border-radius: 1.4rem;
+	-webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.2);
+	height: 4.5rem;
+	width: 20rem;
+	&:hover {
+		-webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.3);
+		box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.3);
+	}
+}
+.card {
+	&__restaurant {
+		background-color: white;
+		border-radius: 1rem;
+		-webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.3);
+		box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.3);
+		height: 15rem;
+		width: 20rem;
+	}
+	&__restaurant img {
+		border-radius: 1rem 1rem 0rem 0rem;
+		height: 10rem;
+		object-fit: cover;
+		position: relative;
+		width: 20rem;
+	}
+	&__text {
+		line-height: 0.5rem;
+		padding: 0 1rem;
+	}
+	&__icon {
+		font-size: 1.5rem;
+		position: relative;
+		bottom: 3rem;
+		left: 15rem;
+	}
+}

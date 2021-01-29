@@ -1,0 +1,21 @@
+.restaurant__section a {
+	text-decoration: none;
+	color: black;
+}
+.restaurant__section {
+	.container {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+}
+
+.restaurant__section {
+	background-color: $color-background;
+	padding: 2rem;
+	h1 {
+		font-size: 1.6rem;
+		font-weight: 900;
+	}
+}

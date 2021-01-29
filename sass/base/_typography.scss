@@ -1,0 +1,28 @@
+header {
+	font-family: $font-primary;
+	h1 {
+		font-size: 1.6rem;
+	}
+	h2 {
+		font-size: 1.2rem;
+		font-weight: 100;
+	}
+	p {
+		font-weight: 900;
+	}
+}
+h3 {
+	font-size: 1.2rem;
+	font-weight: 900;
+}
+h4 {
+	font-size: 1rem;
+	font-weight: 100;
+}
+.main__title {
+	font-family: $font_secondary;
+	font-size: $font_size--regular;
+}
+ul {
+	list-style-type: none;
+}

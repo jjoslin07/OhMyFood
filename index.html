@@ -4,6 +4,14 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="/Project-3/public/css/main.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Roboto"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Shrikhand"
+		/>
 		<script
 			src="https://kit.fontawesome.com/793864380d.js"
 			crossorigin="anonymous"
@@ -12,7 +20,7 @@
 	</head>
 	<body>
 		<header>
-			<div class="container__header">
+			<div class="container">
 				<div class="header__logo">
 					<img
 						src="/Project-3/public/img/logo/ohmyfood@2x.svg"
@@ -22,39 +30,52 @@
 				<div class="header__location">
 					<p><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
 				</div>
-				<div class="header__title title">
-					<h1>Book the menu you like</h1>
-				</div>
-				<div class="header__subtitle subtitle">
-					<h2>
-						Discover top-of-the-art restaurants we <br />
-						picked for you
-					</h2>
-				</div>
-				<div class="header__btn btn">
-					<a href="#restaurants"><button>Explore our restaurants</button></a>
+				<div class="header__explore">
+					<div class="header__title title">
+						<h1>Book the menu you like</h1>
+					</div>
+					<div class="header__subtitle subtitle">
+						<h2>
+							Discover top-of-the-art restaurants we <br />
+							picked for you
+						</h2>
+					</div>
+					<div>
+						<a href="#restaurants"
+							><button class="header__btn btn">
+								Explore our restaurants
+							</button></a
+						>
+					</div>
 				</div>
 			</div>
 		</header>
 		<nav>
-			<div class="container__nav">
+			<div class="container">
 				<div class="nav__title title"><h1>How it works</h1></div>
 				<div class="nav__list">
-					<ul>
-						<li><i class="fas fa-mobile-alt"></i>Choose a restaurant</li>
-						<li><i class="fas fa-list-ul"></i>Create your menu</li>
-						<li><i class="fas fa-store"></i>Go enjoy it at the restaurant</li>
-					</ul>
+					<div class="nav__card">
+						<i class="fas fa-mobile-alt"></i>
+						<p>Choose a restaurant</p>
+					</div>
+					<div class="nav__card">
+						<i class="fas fa-list-ul"></i>
+						<p>Create your menu</p>
+					</div>
+					<div class="nav__card">
+						<i class="fas fa-store"></i>
+						<p>Go enjoy it at the restaurant</p>
+					</div>
 				</div>
 			</div>
 		</nav>
 		<section class="restaurant__section" id="restaurants">
-			<div class="container__main">
-				<div class="main__title title"><h1>Restaurants</h1></div>
+			<div class="title"><h1>Restaurants</h1></div>
+			<div class="container">
 				<a href="/Project-3/the_full_palette.html">
-					<div class="card">
+					<div class="card__restaurant">
 						<img
-							src="#"
+							src="/Project-3/public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
 							alt="Restaurant table with glasses of white wine and bread in a basket."
 						/>
 						<div class="card__text">
@@ -65,9 +86,9 @@
 					</div>
 				</a>
 				<a href="/Project-3/the_enchanted_plate.html">
-					<div class="card">
+					<div class="card__restaurant">
 						<img
-							src="#"
+							src="./public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
 							alt="Restaurant table with italian food and glasses of wine and bread in a basket."
 						/>
 						<div class="card__text">
@@ -78,9 +99,9 @@
 					</div>
 				</a>
 				<a href="/Project-3/bastille.html">
-					<div class="card">
+					<div class="card__restaurant">
 						<img
-							src="#"
+							src="./public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
 							alt="Restaurant table with eggs benedict and a glass of water with lemon slice."
 						/>
 						<div class="card__text">
@@ -91,9 +112,9 @@
 					</div>
 				</a>
 				<a href="/Project-3/le_gourmand.html">
-					<div class="card">
+					<div class="card__restaurant">
 						<img
-							src="#"
+							src="./public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
 							alt="Restaurant table with asian dish and cinnamon stick on the side."
 						/>
 						<div class="card__text">
