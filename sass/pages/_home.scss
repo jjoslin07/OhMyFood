@@ -1,3 +1,15 @@
+.icon {
+	&__number {
+		position: relative;
+		right: 0.75rem;
+	}
+	&__new {
+		position: relative;
+		left: 13.5rem;
+		top: 3rem;
+		z-index: 1;
+	}
+}
 .restaurant__section a {
 	text-decoration: none;
 	color: black;
@@ -13,9 +25,11 @@
 
 .restaurant__section {
 	background-color: $color-background;
-	padding: 2rem;
+	margin-top: 3rem;
+	padding-bottom: 5rem;
+	padding-top: 2rem;
 	h1 {
-		font-size: 1.6rem;
 		font-weight: 900;
+		margin-left: 1.5rem;
 	}
 }

@@ -6,8 +6,12 @@
 	height: 4.5rem;
 	width: 20rem;
 	&:hover {
-		-webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.3);
-		box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.3);
+		background-color: lighten($color: $color-primary, $amount: 35%);
+		box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.15);
+		-webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.15);
+	}
+	&:hover .fas {
+		color: $color-primary;
 	}
 }
 .card {
@@ -35,5 +39,6 @@
 		position: relative;
 		bottom: 3rem;
 		left: 15rem;
+		width: 1.5rem;
 	}
 }

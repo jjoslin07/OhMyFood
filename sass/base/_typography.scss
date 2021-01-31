@@ -1,8 +1,25 @@
-header {
+html body {
 	font-family: $font-primary;
-	h1 {
-		font-size: 1.6rem;
+}
+
+footer {
+	text-decoration: none;
+	a {
+		color: white;
+		font-family: $font-primary;
+		text-decoration: none;
 	}
+	p {
+		color: white;
+		font-family: $font-secondary;
+		margin-left: 2rem;
+		text-decoration: none;
+	}
+}
+h1 {
+	font-size: 1.5rem;
+}
+header {
 	h2 {
 		font-size: 1.2rem;
 		font-weight: 100;
@@ -20,8 +37,7 @@ h4 {
 	font-weight: 100;
 }
 .main__title {
-	font-family: $font_secondary;
-	font-size: $font_size--regular;
+	font-family: $font-secondary;
 }
 ul {
 	list-style-type: none;

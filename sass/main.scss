@@ -3,12 +3,12 @@
 @import "./utils/mixins";
 @import "./utils/extensions";
 
-@import "./base/reset";
+@import "./base/base";
 @import "./base/typography";
 
 @import "./components/buttons";
 @import "./components/cards";
-
+@import "./components/icons";
 @import "./layout/container";
 @import "./layout/footer";
 @import "./layout/forms";

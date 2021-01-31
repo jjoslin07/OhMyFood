@@ -1,0 +1,17 @@
+footer {
+	background-color: lighten($color: #000000, $amount: 15);
+	.container {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		height: 13.5rem;
+		margin-left: 2rem;
+	}
+	i {
+		margin-right: 0.75rem;
+	}
+	p {
+		font-size: 1.2rem;
+		margin-left: 0;
+	}
+}

@@ -2,13 +2,16 @@
 	background-image: linear-gradient($color-secondary 0%, $color-primary 100%);
 	border: 0px solid rgb(28, 110, 164);
 	border-radius: 3rem;
+	-webkit-box-shadow: -1px 4px 10px 5px rgba(0, 0, 0, 0.15);
+	box-shadow: -1px 4px 10px 5px rgba(0, 0, 0, 0.15);
 	color: white;
 	display: inline-block;
 	font-family: $font-primary;
 	font-size: 1rem;
-	height: 3.5rem;
-	line-height: 0.7rem;
+	height: 3.2rem;
+	line-height: 0.4rem;
 	padding: 1.5rem;
+	width: 14rem;
 	&:hover {
 		background-image: linear-gradient($color-secondary 100%, $color-primary 0%);
 	}

@@ -1,9 +1,30 @@
 header {
+  text-align: center;
+}
+
+html body {
   font-family: roboto;
 }
 
-header h1 {
-  font-size: 1.6rem;
+footer {
+  text-decoration: none;
+}
+
+footer a {
+  color: white;
+  font-family: roboto;
+  text-decoration: none;
+}
+
+footer p {
+  color: white;
+  font-family: shrikhand;
+  margin-left: 2rem;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.5rem;
 }
 
 header h2 {
@@ -27,7 +48,6 @@ h4 {
 
 .main__title {
   font-family: shrikhand;
-  font-size: 1rem;
 }
 
 ul {
@@ -39,13 +59,16 @@ ul {
   background-image: linear-gradient(#ff79da 0%, #9356dc 100%);
   border: 0px solid #1c6ea4;
   border-radius: 3rem;
+  -webkit-box-shadow: -1px 4px 10px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: -1px 4px 10px 5px rgba(0, 0, 0, 0.15);
   color: white;
   display: inline-block;
   font-family: roboto;
   font-size: 1rem;
-  height: 3.5rem;
-  line-height: 0.7rem;
+  height: 3.2rem;
+  line-height: 0.4rem;
   padding: 1.5rem;
+  width: 14rem;
 }
 
 .btn:hover {
@@ -69,8 +92,13 @@ ul {
 }
 
 .nav__card:hover {
-  -webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.3);
+  background-color: #f2eafb;
+  box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.15);
+}
+
+.nav__card:hover .fas {
+  color: #9356dc;
 }
 
 .card__restaurant {
@@ -101,6 +129,43 @@ ul {
   position: relative;
   bottom: 3rem;
   left: 15rem;
+  width: 1.5rem;
+}
+
+.icon__number {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #9356dc;
+  border-radius: 2rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1.5rem;
+}
+
+.icon__new {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99e2d0;
+  border-radius: 0.15rem;
+  color: #278870;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 600;
+  height: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 5.5rem;
 }
 
 .container {
@@ -113,18 +178,49 @@ ul {
           flex-direction: column;
 }
 
+footer {
+  background-color: #262626;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  height: 13.5rem;
+  margin-left: 2rem;
+}
+
+footer i {
+  margin-right: 0.75rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+  margin-left: 0;
+}
+
 body {
   margin: 0 auto;
   padding: 1rem auto;
 }
 
-header {
-  text-align: center;
-}
-
 .header__explore {
   background-color: #f2f2f2;
-  height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.75rem;
+  height: 18rem;
+  padding-top: 1rem;
 }
 
 .header__location {
@@ -136,8 +232,13 @@ header {
   padding-right: 1rem;
 }
 
+.header__logo {
+  padding: 0.75rem 0;
+}
+
 .nav__title {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
   position: relative;
   top: 2rem;
 }
@@ -159,11 +260,22 @@ header {
 .nav__card i {
   color: gray;
   font-size: 1.2rem;
-  padding-left: 2rem;
 }
 
 .nav__card p {
   font-weight: 900;
+}
+
+.icon__number {
+  position: relative;
+  right: 0.75rem;
+}
+
+.icon__new {
+  position: relative;
+  left: 13.5rem;
+  top: 3rem;
+  z-index: 1;
 }
 
 .restaurant__section a {
@@ -187,11 +299,13 @@ header {
 
 .restaurant__section {
   background-color: #f2f2f2;
-  padding: 2rem;
+  margin-top: 3rem;
+  padding-bottom: 5rem;
+  padding-top: 2rem;
 }
 
 .restaurant__section h1 {
-  font-size: 1.6rem;
   font-weight: 900;
+  margin-left: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */

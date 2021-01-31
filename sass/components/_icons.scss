@@ -1,0 +1,24 @@
+.icon {
+	&__number {
+		align-items: center;
+		background-color: $color-primary;
+		border-radius: 2rem;
+		color: white;
+		display: flex;
+		height: 1.5rem;
+		justify-content: center;
+		width: 1.5rem;
+	}
+	&__new {
+		align-items: center;
+		background-color: $color-tertiary;
+		border-radius: 0.15rem;
+		color: darken($color: $color-tertiary, $amount: 40%);
+		display: flex;
+		font-size: 0.9rem;
+		font-weight: 600;
+		height: 2rem;
+		justify-content: center;
+		width: 5.5rem;
+	}
+}
