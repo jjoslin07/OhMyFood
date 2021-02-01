@@ -38,7 +38,35 @@ h4 {
 }
 .main__title {
 	font-family: $font-secondary;
+	h1 {
+		font-size: 1.7rem;
+	}
 }
 ul {
 	list-style-type: none;
+}
+.main__subtitle {
+	h2 {
+		font-size: 1.2rem;
+		font-weight: 300;
+		padding-bottom: 0.5rem;
+		&::after {
+			content: "";
+			display: block;
+			width: 15%;
+			padding-top: 0.3rem;
+			border-bottom: 0.2rem solid $color-tertiary;
+		}
+	}
+}
+
+.main__icon {
+	i {
+		float: right;
+		font-size: 1.5rem;
+		font-weight: 100;
+		position: relative;
+		right: 1.5rem;
+		bottom: 3rem;
+	}
 }

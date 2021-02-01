@@ -2,6 +2,11 @@ header {
   text-align: center;
 }
 
+.menu__background h1,
+.menu__background h2 {
+  margin-left: 2rem;
+}
+
 html body {
   font-family: roboto;
 }
@@ -50,8 +55,35 @@ h4 {
   font-family: shrikhand;
 }
 
+.main__title h1 {
+  font-size: 1.7rem;
+}
+
 ul {
   list-style-type: none;
+}
+
+.main__subtitle h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding-bottom: 0.5rem;
+}
+
+.main__subtitle h2::after {
+  content: "";
+  display: block;
+  width: 15%;
+  padding-top: 0.3rem;
+  border-bottom: 0.2rem solid #99e2d0;
+}
+
+.main__icon i {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 100;
+  position: relative;
+  right: 1.5rem;
+  bottom: 3rem;
 }
 
 .btn {
@@ -79,6 +111,7 @@ ul {
 .btn__order {
   height: 3rem;
   line-height: 0.1rem;
+  margin: 4rem 6rem;
   width: 11rem;
 }
 
@@ -132,6 +165,34 @@ ul {
   width: 1.5rem;
 }
 
+.menu__item {
+  -webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  border-radius: 1rem;
+  height: 3.25rem;
+  line-height: 0.9rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  width: 19rem;
+}
+
+.menu__item h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.menu__item h4 {
+  font-size: 0.8rem;
+  position: relative;
+  bottom: 0.5rem;
+}
+
+.menu__item h4 strong {
+  float: right;
+  padding-right: 1rem;
+}
+
 .icon__number {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -142,6 +203,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 0.8rem;
   height: 1.5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -168,6 +230,10 @@ ul {
   width: 5.5rem;
 }
 
+.arrow {
+  color: black;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,6 +242,22 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.menu__entrees,
+.menu__main_dish,
+.menu__desserts {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
 }
 
 footer {
@@ -209,6 +291,12 @@ body {
   padding: 1rem auto;
 }
 
+.menu__background {
+  background-color: #f2f2f2;
+  border-radius: 2rem 2rem 0 0;
+  z-index: 1;
+}
+
 .header__explore {
   background-color: #f2f2f2;
   display: -webkit-box;
@@ -233,7 +321,35 @@ body {
 }
 
 .header__logo {
-  padding: 0.75rem 0;
+  padding: 0.25rem 0;
+}
+
+.header__navigation {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__navigation i {
+  position: relative;
+  right: 4rem;
+}
+
+.header__img img {
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 .nav__title {
@@ -294,14 +410,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .restaurant__section {
   background-color: #f2f2f2;
   margin-top: 3rem;
   padding-bottom: 5rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .restaurant__section h1 {

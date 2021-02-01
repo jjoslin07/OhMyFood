@@ -1,3 +1,13 @@
+* {
+	//outline: 1px dotted red;
+	//outline-offset: -1px;
+}
 header {
 	text-align: center;
+}
+.menu__background {
+	h1,
+	h2 {
+		margin-left: 2rem;
+	}
 }
