@@ -7,6 +7,18 @@ header {
   margin-left: 2rem;
 }
 
+.menu__background .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 html body {
   font-family: roboto;
 }
@@ -111,7 +123,7 @@ ul {
 .btn__order {
   height: 3rem;
   line-height: 0.1rem;
-  margin: 4rem 6rem;
+  margin: 4rem auto;
   width: 11rem;
 }
 
