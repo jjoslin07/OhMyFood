@@ -13,7 +13,13 @@
 	padding: 1.5rem;
 	width: 14rem;
 	&:hover {
-		background-image: linear-gradient($color-secondary 100%, $color-primary 0%);
+		transition-duration: 500ms;
+		-webkit-box-shadow: -1px 4px 10px 5px rgba(0, 0, 0, 0.4);
+		box-shadow: -1px 4px 10px 5px rgba(0, 0, 0, 0.4);
+		background-image: linear-gradient(
+			lighten($color-secondary, 3),
+			lighten($color-primary, 3)
+		);
 	}
 	&__order {
 		height: 3rem;

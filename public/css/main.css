@@ -1,3 +1,8 @@
+.menu__entrees {
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
 header {
   text-align: center;
 }
@@ -69,6 +74,7 @@ h4 {
 
 .main__title h1 {
   font-size: 1.7rem;
+  font-weight: 200;
 }
 
 ul {
@@ -89,15 +95,6 @@ ul {
   border-bottom: 0.2rem solid #99e2d0;
 }
 
-.main__icon i {
-  float: right;
-  font-size: 1.5rem;
-  font-weight: 100;
-  position: relative;
-  right: 1.5rem;
-  bottom: 3rem;
-}
-
 .btn {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background-image: linear-gradient(#ff79da 0%, #9356dc 100%);
@@ -116,8 +113,12 @@ ul {
 }
 
 .btn:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #ff79da), color-stop(0%, #9356dc));
-  background-image: linear-gradient(#ff79da 100%, #9356dc 0%);
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-box-shadow: -1px 4px 10px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: -1px 4px 10px 5px rgba(0, 0, 0, 0.4);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff88de), to(#9b63df));
+  background-image: linear-gradient(#ff88de, #9b63df);
 }
 
 .btn__order {
@@ -133,12 +134,20 @@ ul {
   -webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.2);
   box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.2);
   height: 4.5rem;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
   width: 20rem;
 }
 
 .nav__card:hover {
   background-color: #f2eafb;
   box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.15);
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
   -webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.15);
 }
 
@@ -169,14 +178,6 @@ ul {
   padding: 0 1rem;
 }
 
-.card__icon {
-  font-size: 1.5rem;
-  position: relative;
-  bottom: 3rem;
-  left: 15rem;
-  width: 1.5rem;
-}
-
 .menu__item {
   -webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.05);
   box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.05);
@@ -196,6 +197,7 @@ ul {
 
 .menu__item h4 {
   font-size: 0.8rem;
+  font-weight: 300;
   position: relative;
   bottom: 0.5rem;
 }
@@ -244,6 +246,61 @@ ul {
 
 .arrow {
   color: black;
+}
+
+.card__icon--full {
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 3rem;
+  left: 15rem;
+  width: 1.5rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card__icon--empty {
+  font-size: 1.5rem;
+  background-color: white;
+  position: relative;
+  bottom: 4.5rem;
+  left: 15rem;
+  width: 1.5rem;
+}
+
+.card__icon--empty:hover {
+  opacity: 0;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.main__icon--empty i {
+  background-color: #f2f2f2;
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 100;
+  position: relative;
+  right: 2rem;
+  bottom: 4.5rem;
+}
+
+.main__icon--empty i:hover {
+  opacity: 0;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.main__icon--full i {
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  float: right;
+  font-size: 1.5rem;
+  position: relative;
+  right: 2rem;
+  bottom: 3rem;
 }
 
 .container {
@@ -305,7 +362,9 @@ body {
 
 .menu__background {
   background-color: #f2f2f2;
-  border-radius: 2rem 2rem 0 0;
+  border-radius: 2.5rem 2.5rem 0 0;
+  margin-top: -3rem;
+  position: relative;
   z-index: 1;
 }
 
@@ -362,6 +421,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  z-index: -1;
 }
 
 .nav__title {

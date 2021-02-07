@@ -40,6 +40,7 @@ h4 {
 	font-family: $font-secondary;
 	h1 {
 		font-size: 1.7rem;
+		font-weight: 200;
 	}
 }
 ul {
@@ -57,16 +58,5 @@ ul {
 			padding-top: 0.3rem;
 			border-bottom: 0.2rem solid $color-tertiary;
 		}
-	}
-}
-
-.main__icon {
-	i {
-		float: right;
-		font-size: 1.5rem;
-		font-weight: 100;
-		position: relative;
-		right: 1.5rem;
-		bottom: 3rem;
 	}
 }

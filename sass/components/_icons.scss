@@ -26,3 +26,54 @@
 .arrow {
 	color: black;
 }
+.card__icon {
+	&--full {
+		background: -webkit-linear-gradient($color-primary, $color-secondary);
+		font-size: 1.5rem;
+		position: relative;
+		bottom: 3rem;
+		left: 15rem;
+		width: 1.5rem;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	&--empty {
+		font-size: 1.5rem;
+		background-color: white;
+		position: relative;
+		bottom: 4.5rem;
+		left: 15rem;
+		width: 1.5rem;
+		&:hover {
+			opacity: 0;
+			transition-duration: 500ms;
+		}
+	}
+}
+.main__icon {
+	&--empty i {
+		background-color: $color-background;
+		float: right;
+		font-size: 1.5rem;
+		font-weight: 100;
+		position: relative;
+		right: 2rem;
+		bottom: 4.5rem;
+		&:hover {
+			opacity: 0;
+			transition-duration: 500ms;
+		}
+	}
+	&--full i {
+		background: -webkit-linear-gradient($color-primary, $color-secondary);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		float: right;
+		font-size: 1.5rem;
+		position: relative;
+		right: 2rem;
+		bottom: 3rem;
+	}
+}

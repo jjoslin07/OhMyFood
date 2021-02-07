@@ -4,10 +4,13 @@
 	-webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.2);
 	box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.2);
 	height: 4.5rem;
+	transform: scale(1);
+	transition: transform 400ms;
 	width: 20rem;
 	&:hover {
 		background-color: lighten($color: $color-primary, $amount: 35%);
 		box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.15);
+		transform: scale(1.07);
 		-webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.15);
 	}
 	&:hover .fas {
@@ -34,13 +37,6 @@
 		line-height: 0.5rem;
 		padding: 0 1rem;
 	}
-	&__icon {
-		font-size: 1.5rem;
-		position: relative;
-		bottom: 3rem;
-		left: 15rem;
-		width: 1.5rem;
-	}
 }
 .menu__item {
 	-webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.05);
@@ -58,6 +54,7 @@
 	}
 	h4 {
 		font-size: 0.8rem;
+		font-weight: 300;
 		position: relative;
 		bottom: 0.5rem;
 		strong {
