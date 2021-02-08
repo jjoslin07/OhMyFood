@@ -110,7 +110,7 @@ h4 {
 
 .main__title h1 {
   font-size: 1.7rem;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 ul {
@@ -286,23 +286,23 @@ ul {
 
 .card__icon--full {
   background: -webkit-linear-gradient(#9356dc, #ff79da);
-  font-size: 1.5rem;
+  font-size: 2rem;
   position: relative;
-  bottom: 3rem;
+  bottom: 3.5rem;
   left: 15rem;
-  width: 1.5rem;
+  width: 2rem;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .card__icon--empty {
-  font-size: 1.5rem;
+  font-size: 2rem;
   background-color: white;
   position: relative;
-  bottom: 4.5rem;
+  bottom: 5.5rem;
   left: 15rem;
-  width: 1.5rem;
+  width: 2rem;
 }
 
 .card__icon--empty:hover {
@@ -314,11 +314,11 @@ ul {
 .main__icon--empty i {
   background-color: #f2f2f2;
   float: right;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 100;
   position: relative;
   right: 2rem;
-  bottom: 4.5rem;
+  bottom: 5.5rem;
 }
 
 .main__icon--empty i:hover {
@@ -333,10 +333,10 @@ ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   float: right;
-  font-size: 1.5rem;
+  font-size: 2rem;
   position: relative;
   right: 2rem;
-  bottom: 3rem;
+  bottom: 3.5rem;
 }
 
 .container {
@@ -518,7 +518,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .restaurant__section {

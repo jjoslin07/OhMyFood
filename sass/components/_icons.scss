@@ -29,22 +29,22 @@
 .card__icon {
 	&--full {
 		background: -webkit-linear-gradient($color-primary, $color-secondary);
-		font-size: 1.5rem;
+		font-size: 2rem;
 		position: relative;
-		bottom: 3rem;
+		bottom: 3.5rem;
 		left: 15rem;
-		width: 1.5rem;
+		width: 2rem;
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
 	&--empty {
-		font-size: 1.5rem;
+		font-size: 2rem;
 		background-color: white;
 		position: relative;
-		bottom: 4.5rem;
+		bottom: 5.5rem;
 		left: 15rem;
-		width: 1.5rem;
+		width: 2rem;
 		&:hover {
 			opacity: 0;
 			transition-duration: 500ms;
@@ -55,11 +55,11 @@
 	&--empty i {
 		background-color: $color-background;
 		float: right;
-		font-size: 1.5rem;
+		font-size: 2rem;
 		font-weight: 100;
 		position: relative;
 		right: 2rem;
-		bottom: 4.5rem;
+		bottom: 5.5rem;
 		&:hover {
 			opacity: 0;
 			transition-duration: 500ms;
@@ -71,9 +71,9 @@
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		float: right;
-		font-size: 1.5rem;
+		font-size: 2rem;
 		position: relative;
 		right: 2rem;
-		bottom: 3rem;
+		bottom: 3.5rem;
 	}
 }
