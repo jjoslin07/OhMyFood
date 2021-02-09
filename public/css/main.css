@@ -39,6 +39,56 @@
   }
 }
 
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
 header {
   text-align: center;
 }
@@ -498,7 +548,7 @@ body {
 .icon__new {
   position: relative;
   left: 12rem;
-  bottom: 15.5rem;
+  bottom: 18rem;
   z-index: 1;
 }
 
@@ -531,5 +581,20 @@ body {
 .restaurant__section h1 {
   font-weight: 900;
   margin-left: 1.5rem;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 7.5rem;
+  height: 7.5rem;
+  margin: -4.75rem 0 0 -4.75rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #9356dc), color-stop(#ff79da), to(#99e2d0));
+  background: linear-gradient(#9356dc 40%, #ff79da, #99e2d0);
+  border-radius: 50%;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
 }
 /*# sourceMappingURL=main.css.map */
