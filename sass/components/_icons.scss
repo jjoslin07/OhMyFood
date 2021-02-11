@@ -78,9 +78,9 @@
 	}
 }
 .check {
-	color: $color-tertiary;
-	background-color: white;
-	border-radius: 2rem;
+	color: white;
+	background-color: none;
+	border-radius: 50%;
 	font-size: 1.5rem;
 	position: relative;
 	top: 50%;
@@ -97,11 +97,10 @@
 	right: 0;
 	background-color: $color-tertiary;
 	border-radius: 0 1rem 1rem 0;
-	overflow: hidden;
 	width: 0;
-	height: 4.25rem;
+	height: 4.27rem;
+	overflow: hidden;
 	transition: 0.3s linear;
-	z-index: 0;
 }
 #loader {
 	position: absolute;
