@@ -276,9 +276,14 @@ ul {
   width: 19rem;
 }
 
+.menu__item strong {
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
 .menu__item h3 {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 900;
 }
 
 .menu__item h4 {
@@ -291,6 +296,19 @@ ul {
 .menu__item h4 strong {
   float: right;
   padding-right: 1rem;
+}
+
+.menu__item:hover .overlay {
+  width: 4rem;
+  left: 15.2rem;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.menu__item:hover strong {
+  margin-right: 4rem;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 .icon__number {
@@ -389,6 +407,49 @@ ul {
   bottom: 3.5rem;
 }
 
+.check {
+  color: #99e2d0;
+  background-color: white;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.overlay {
+  position: relative;
+  bottom: 4.9rem;
+  left: 100%;
+  right: 0;
+  background-color: #99e2d0;
+  border-radius: 0 1rem 1rem 0;
+  overflow: hidden;
+  width: 0;
+  height: 4.25rem;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  z-index: 0;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 7rem;
+  height: 7rem;
+  margin: -3rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #9356dc), color-stop(#ff79da), to(#99e2d0));
+  background: linear-gradient(#9356dc 40%, #ff79da, #99e2d0);
+  border-radius: 50%;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -451,7 +512,6 @@ body {
   border-radius: 2.5rem 2.5rem 0 0;
   margin-top: -3rem;
   position: relative;
-  z-index: 1;
 }
 
 .header__explore {
@@ -581,20 +641,5 @@ body {
 .restaurant__section h1 {
   font-weight: 900;
   margin-left: 1.5rem;
-}
-
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 7.5rem;
-  height: 7.5rem;
-  margin: -4.75rem 0 0 -4.75rem;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #9356dc), color-stop(#ff79da), to(#99e2d0));
-  background: linear-gradient(#9356dc 40%, #ff79da, #99e2d0);
-  border-radius: 50%;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
 }
 /*# sourceMappingURL=main.css.map */

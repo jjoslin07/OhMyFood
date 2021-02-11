@@ -16,6 +16,18 @@
 			src="https://kit.fontawesome.com/793864380d.js"
 			crossorigin="anonymous"
 		></script>
+		<script>
+			var myVar;
+			
+			function myFunction() {
+			  myVar = setTimeout(showPage, 2000);
+			}
+			
+			function showPage() {
+			  document.getElementById("loader").style.display = "none";
+			  document.getElementById("myDiv").style.display = "block";
+			}
+			</script>
 		<title>ohmyfood</title>
 	</head>
 	<body onload="myFunction()" style="margin:0;">
@@ -163,17 +175,6 @@
 			</div>
 		</footer>
 	</div>
-	<script>
-		var myVar;
-		
-		function myFunction() {
-		  myVar = setTimeout(showPage, 3000);
-		}
-		
-		function showPage() {
-		  document.getElementById("loader").style.display = "none";
-		  document.getElementById("myDiv").style.display = "block";
-		}
-		</script>
+	
 	</body>
 </html>

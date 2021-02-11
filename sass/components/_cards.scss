@@ -48,9 +48,12 @@
 	padding-bottom: 1rem;
 	padding-left: 1rem;
 	width: 19rem;
+	strong {
+		transition: 0.3s linear;
+	}
 	h3 {
 		font-size: 1rem;
-		font-weight: 500;
+		font-weight: 900;
 	}
 	h4 {
 		font-size: 0.8rem;
@@ -61,5 +64,14 @@
 			float: right;
 			padding-right: 1rem;
 		}
+	}
+	&:hover .overlay {
+		width: 4rem;
+		left: 15.2rem;
+		transition: 0.3s linear;
+	}
+	&:hover strong {
+		margin-right: 4rem;
+		transition: 0.3s linear;
 	}
 }
