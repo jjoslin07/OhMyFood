@@ -1,18 +1,4 @@
-// * {
-// 	outline: red 1px dotted;
-// 	outline-offset: -1px;
-// }
-header {
-	text-align: center;
-}
-.menu__background {
-	h1,
-	h2 {
-		margin-left: 2rem;
-	}
-	.btn {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+body {
+	margin: 0 auto;
+	padding: 1rem auto;
 }

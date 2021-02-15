@@ -15,3 +15,13 @@ footer {
 		margin-left: 0;
 	}
 }
+@media only screen and (min-width: 768px) {
+	footer {
+		.container {
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-around;
+			margin: 1rem;
+		}
+	}
+}

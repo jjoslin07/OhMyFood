@@ -1,0 +1,37 @@
+.menu__entrees,
+.menu__main_dish,
+.menu__desserts {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.menu__background {
+	background-color: $color-background;
+	border-radius: 2.5rem 2.5rem 0 0;
+	margin-top: -3rem;
+	position: relative;
+
+	h1,
+	h2 {
+		margin-left: 2rem;
+	}
+	.btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.menu__section {
+	display: flex;
+	flex-direction: column;
+}
+@media only screen and (min-width: 1440px) {
+	.menu {
+		&__section {
+			flex-direction: row;
+			justify-content: space-around;
+		}
+	}
+}
