@@ -91,7 +91,16 @@
 
 body {
   margin: 0 auto;
-  padding: 1rem auto;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 html body {
@@ -116,7 +125,7 @@ footer p {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 header h2 {
@@ -411,7 +420,7 @@ ul {
   bottom: 3.5rem;
   left: 15rem;
   width: 2rem;
-  background-clip: text;
+  background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -449,7 +458,7 @@ ul {
 
 .main__icon--full i {
   background: -webkit-linear-gradient(#9356dc, #ff79da);
-  background-clip: text;
+  background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   float: right;
@@ -461,7 +470,6 @@ ul {
 
 .check {
   color: white;
-  background-color: none;
   border-radius: 50%;
   font-size: 1.5rem;
   -webkit-transform: translate(-50%, -50%);
@@ -486,16 +494,6 @@ ul {
   border-radius: 50%;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 footer {
@@ -604,7 +602,6 @@ header {
   margin-bottom: 1rem;
   position: relative;
   top: 2rem;
-  font-style: 900;
 }
 
 .nav__card {

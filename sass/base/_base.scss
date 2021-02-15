@@ -1,4 +1,7 @@
 body {
 	margin: 0 auto;
-	padding: 1rem auto;
+}
+.container {
+	display: flex;
+	flex-direction: column;
 }

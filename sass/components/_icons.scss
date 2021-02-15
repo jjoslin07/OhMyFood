@@ -34,7 +34,7 @@
 		bottom: 3.5rem;
 		left: 15rem;
 		width: 2rem;
-		background-clip: text;
+		background-clip: inherit;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
@@ -67,7 +67,7 @@
 	}
 	&--full i {
 		background: -webkit-linear-gradient($color-primary, $color-secondary);
-		background-clip: text;
+		background-clip: inherit;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		float: right;
@@ -79,7 +79,6 @@
 }
 .check {
 	color: white;
-	background-color: none;
 	border-radius: 50%;
 	font-size: 1.5rem;
 	-webkit-transform: translate(-50%, -50%);
