@@ -1,23 +1,21 @@
-@import "./utils/variables";
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/extensions";
-@import "./utils/effects";
+// Utils
+@import "./1-utils/effects";
+@import "./1-utils/variables";
 
-@import "./base/base";
-@import "./base/typography";
+// Basics
+@import "./2-base/base";
+@import "./2-base/typography";
 
-@import "./components/buttons";
-@import "./components/cards";
-@import "./components/icons";
-@import "./layout/container";
-@import "./layout/footer";
-@import "./layout/forms";
-@import "./layout/grid";
-@import "./layout/header";
-@import "./layout/navigation";
-@import "./layout/sidebar";
+// Components
+@import "./3-components/buttons";
+@import "./3-components/cards";
+@import "./3-components/icons";
 
-@import "./pages/contact";
-@import "./pages/home";
-@import "./pages/menu";
+// Layout
+@import "./4-layout/footer";
+@import "./4-layout/header";
+
+// Pages
+@import "./5-pages/contact";
+@import "./5-pages/home";
+@import "./5-pages/menu";
