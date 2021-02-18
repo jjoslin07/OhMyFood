@@ -89,20 +89,46 @@
 	transition-duration: 0.5s;
 }
 
-#loader {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	z-index: 1;
-	width: 7rem;
-	height: 7rem;
-	margin: -3rem;
-	background: linear-gradient(
-		$color-primary 40%,
-		$color-secondary,
-		$color-tertiary
-	);
-	border-radius: 50%;
-	-webkit-animation: spin 2s linear infinite;
-	animation: spin 2s linear infinite;
+.loader {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background-color: whitesmoke;
+	animation: loader 0.01s;
+	animation-delay: 2.5s;
+	animation-fill-mode: both;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__item {
+		height: 5rem;
+		width: 1.5rem;
+		border-radius: 0.5rem;
+		animation: bounce 1s;
+		animation-iteration-count: 5;
+		animation-duration: 1s;
+
+		&--container {
+			display: flex;
+			gap: 0.5rem;
+		}
+
+		&--1 {
+			background-color: $color-primary;
+		}
+
+		&--2 {
+			background-color: $color-secondary;
+			animation-delay: 0.5s;
+		}
+
+		&--3 {
+			background-color: $color-tertiary;
+			animation-delay: 0.75s;
+		}
+	}
 }
