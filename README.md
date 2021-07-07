@@ -1,6 +1,6 @@
 # Ohmyfood
-## Project 3 OpenClassrooms ➡ [Integrate a mobile website with animations in CSS](https://jjoslin07.github.io/Project-3/)
-
+### Project 3 OpenClassrooms ➡ [Integrate a mobile website with animations in CSS](https://jjoslin07.github.io/Project-3/)
+#### Screenshots ➡ [Click Here](#screenshots)
 ### Scenario
 You have just been recruited at Ohmyfood as a junior developer. Congratulations!
 
@@ -58,3 +58,17 @@ The assessor will stop playing the role of Paul five minutes before the end of t
 ⚒ Develop a navigation structure for a website
 
 ⚒ Implement design effects using CSS & Sass
+
+<div id="screenshots" align="center">
+ <h2>Home Page Mobile</h3>
+ <img src="https://user-images.githubusercontent.com/73438491/124795448-e59bfa80-df04-11eb-977f-a1af08982624.png" alt="Home Page Mobile Screenshot" />
+ <br>
+ <h2>Menu Page Mobile </h3>
+ <img src="https://user-images.githubusercontent.com/73438491/124795519-f8163400-df04-11eb-849d-bba35182fe52.png" alt="Menu Page Mobile Screenshot" />.
+  <h2>Home Page Desktop</h3>
+ <img src="https://user-images.githubusercontent.com/73438491/124796383-f4cf7800-df05-11eb-92b0-9013e6c6c40c.png" alt="Home Page Desktop Screenshot" />
+ <br>
+ <h2>Menu Page Desktop </h3>
+ <img src="https://user-images.githubusercontent.com/73438491/124796246-cc477e00-df05-11eb-95bb-83de71ebe86e.png" alt="Menu Page Desktop Screenshot" />
+ </div>
+
