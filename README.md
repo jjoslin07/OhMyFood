@@ -1,5 +1,5 @@
 # Ohmyfood
-### Project 3 OpenClassrooms ➡ [Integrate a mobile website with animations in CSS](https://jjoslin07.github.io/Project-3/)
+### Project 3 OpenClassrooms ➡ [Integrate a mobile website with animations in CSS](https://jjoslin07.github.io/OhMyFood/)
 #### Screenshots ➡ [Click Here](#screenshots)
 ### Scenario
 You have just been recruited at Ohmyfood as a junior developer. Congratulations!
