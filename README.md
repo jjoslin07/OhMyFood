@@ -1,5 +1,5 @@
 # Ohmyfood
-### Project 3 OpenClassrooms ➡ [Live Demo](https://jjoslin07.github.io/OhMyFood/)
+### Mobile Food Ordering App ➡ [Live Demo](https://jjoslin07.github.io/OhMyFood/)
 #### Screenshots ➡ [Click Here](#screenshots)
 ### Scenario
 You have just been recruited at Ohmyfood as a junior developer. Congratulations!
